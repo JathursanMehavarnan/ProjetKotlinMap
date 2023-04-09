@@ -15,14 +15,14 @@ class HomeActivity : MainActivity() {
 
         setHeaderTxt("Création de compte")
 
-        buttonScanQrCode.setOnClickListener(View.OnClickListener {
-            val intent = Intent(application, ::class.java)
-            startActivity(intent)
-        })
-
-        buttonSignUp.setOnClickListener(View.OnClickListener {
-            val intent = Intent(application, ::class.java)
-            startActivity(intent)
-        })
+//        buttonScanQrCode.setOnClickListener(View.OnClickListener {
+//            val intent = Intent(application, ::class.java)
+//            startActivity(intent)
+//        })
+//
+//        buttonSignUp.setOnClickListener(View.OnClickListener {
+//            val intent = Intent(application, ::class.java)
+//            startActivity(intent)
+//        })
     }
 }
