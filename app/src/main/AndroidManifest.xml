@@ -12,13 +12,19 @@
         android:theme="@style/Theme.ProjetKotlinMap"
         tools:targetApi="31">
         <activity
-            android:name=".Preference"
+            android:name=".StoreFragment"
             android:exported="false" />
         <activity
-            android:name=".ProfileUserActivity"
+            android:name=".UserCardFragment"
             android:exported="false" />
         <activity
-            android:name=".InfoUser"
+            android:name=".MyAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreInformationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComponentActivity"
             android:exported="false" />
         <activity
             android:name=".QrCodeActivity"
@@ -30,10 +36,10 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ProductOffersFragment"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +47,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
