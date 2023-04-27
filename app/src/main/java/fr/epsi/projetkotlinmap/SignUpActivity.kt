@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.content.SharedPreferences
 import android.widget.Toast
 
-
 class SignUpActivity : MainActivity() {
 
     private lateinit var prefs: SharedPreferences
@@ -75,7 +74,7 @@ class SignUpActivity : MainActivity() {
                 editor.apply()
 
                 Toast.makeText(this, "Account created successfully", Toast.LENGTH_SHORT).show()
-                val profileIntent = Intent(this, ProfileUserActivity::class.java)
+                val profileIntent = Intent(this, ComponentActivity::class.java)
                 profileIntent.putExtra("firstName", firstName)
                 profileIntent.putExtra("lastName", lastName)
                 profileIntent.putExtra("email", email)

@@ -5,4 +5,5 @@
     <color name="black">#FF000000</color>
     <color name="blue">#19647E</color>
     <color name="border_color">@color/black</color>
+    <color name="red">#F44336</color>
 </resources>
