@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ComponentActivity">
+    android:layout_height="match_parent">
+
 
     <include
         layout="@layout/layout_header"
@@ -12,23 +12,21 @@
         android:layout_height="wrap_content" />
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+        android:id="@+id/viewPager"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="?attr/actionBarSize"/>
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-        android:layout_gravity="bottom"
-        tools:ignore="MissingConstraints">
+        android:layout_gravity="bottom">
 
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
+            android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue"
@@ -38,4 +36,5 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

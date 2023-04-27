@@ -12,19 +12,16 @@
         android:theme="@style/Theme.ProjetKotlinMap"
         tools:targetApi="31">
         <activity
+            android:name=".StoreFragment"
+            android:exported="false" />
+        <activity
             android:name=".UserCardFragment"
             android:exported="false" />
         <activity
             android:name=".MyAccountActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductFragment"
-            android:exported="false" />
-        <activity
-            android:name=".StoreInformationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StoreActivity"
+            android:name=".StoreInformationsActivity"
             android:exported="false" />
         <activity
             android:name=".ComponentActivity"
@@ -37,6 +34,9 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductOffersFragment"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

@@ -24,15 +24,15 @@ class ComponentActivity : MainActivity() {
     }
 
 
-    val viewPager = findViewById<ViewPager>(R.id.view_pager)
-    val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
+    val viewPager = findViewById<ViewPager>(R.id.viewPager)
+    val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
     val tabTextInactiveColor = resources.getColor(R.color.red)
     val tabTextActiveColor = resources.getColor(android.R.color.white)
     tabLayout.setTabTextColors(tabTextInactiveColor, tabTextActiveColor)
     val adapter = ViewPagerAdapter(supportFragmentManager)
     adapter.addFragment(UserCardFragment(), "Carte")
     adapter.addFragment(ProductOffersFragment(), "Offres")
-    adapter.addFragment(StoreActivity(), "Magasins")
+    adapter.addFragment(StoreFragment(), "Magasins")
     viewPager.adapter = adapter
     tabLayout.setupWithViewPager(viewPager)
 
