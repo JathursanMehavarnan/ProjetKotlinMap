@@ -21,7 +21,7 @@ class QrCodeActivity : MainActivity() {
         val lastName: String,
         val email: String,
         val address: String,
-        val zipCode: String,
+        val zipcode: String,
         val city: String,
         val cardRef: String
     )
@@ -36,7 +36,7 @@ class QrCodeActivity : MainActivity() {
                 registrationFormIntent.putExtra("lastName", qrCodeDatas.lastName)
                 registrationFormIntent.putExtra("email", qrCodeDatas.email)
                 registrationFormIntent.putExtra("address", qrCodeDatas.address)
-                registrationFormIntent.putExtra("zipCode", qrCodeDatas.zipCode)
+                registrationFormIntent.putExtra("zipCode", qrCodeDatas.zipcode)
                 registrationFormIntent.putExtra("city", qrCodeDatas.city)
                 registrationFormIntent.putExtra("cardRef", qrCodeDatas.cardRef)
                 startActivity(registrationFormIntent)

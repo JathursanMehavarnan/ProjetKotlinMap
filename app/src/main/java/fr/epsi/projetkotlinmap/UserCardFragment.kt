@@ -27,12 +27,11 @@ class UserCardFragment : Fragment() {
             cardRefBarcodeImage = view.findViewById(R.id.cardRefBarcodeImage)
 
             displayProfile()
-
             return view
         }
 
         private fun displayProfile() {
-            val preferences = context?.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+            val preferences = context?.getSharedPreferences("MyPreference", Context.MODE_PRIVATE)
             val firstName = preferences?.getString("firstName", null)
             val lastName = preferences?.getString("lastName", null)
             val fullName = "$firstName $lastName"
